@@ -1,0 +1,11 @@
+music21==9.1.0
+flask==2.3.3
+flask-cors==4.0.0
+python-dotenv==1.0.0
+gunicorn==21.2.0
+# DiffWave и PyTorch
+torch>=2.0.0
+torchaudio>=2.0.0
+tensorflow==2.13.0
+git+https://github.com/lmnt-com/diffwave.git 
+tqdm>=4.65.0 
