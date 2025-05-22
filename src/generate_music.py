@@ -60,7 +60,7 @@ def generate_music(model_type, duration=500, temperature=0.7):
 
 if __name__ == "__main__":
     # Пример использования
-    model_type = 'lstm'  # Можно выбрать: 'lstm', 'cnn_lstm', 'bidirectional_lstm', 'gru', 'transformer'
+    model_type = 'cnn_lstm'  # Можно выбрать: 'lstm', 'cnn_lstm', 'bidirectional_lstm', 'gru', 'transformer'
     duration = 100  # Длительность в нотах
     temperature = 0.7  # Температура генерации (0.1 - 1.0)
     

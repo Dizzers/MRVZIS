@@ -1,3 +1,8 @@
+
+#не запускать app.py
+#Иван Сергеевич тести все в generate_music.py
+#к пятнице результат генерации  Будет лучше у меня ноут не вывозит столько обучать просто тут у меня с железом в целом пробемы(((
+
 import streamlit as st
 import os
 from model.lstm_model import LSTMModel
@@ -134,3 +139,4 @@ try:
     print("Файл весов успешно загружен.")
 except Exception as e:
     print(f"Ошибка при загрузке файла весов: {str(e)}") 
+

@@ -21,8 +21,12 @@ def plot_training_history(results, save_dir='src/model/plots'):
         
         for i, (model_name, model_results) in enumerate(results.items()):
             history = model_results['history']
-            epochs = range(1, len(history[metric]) + 1)
-            ax.plot(epochs, history[metric], 
+            epochs = range(1, 51)  # Всегда показываем 50 эпох
+            values = history[metric]
+            # Если значений меньше 50, дополняем последним значением
+            if len(values) < 50:
+                values = values + [values[-1]] * (50 - len(values))
+            ax.plot(epochs, values, 
                    label=model_name, 
                    color=colors[i % len(colors)],
                    linewidth=2)
